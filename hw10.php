@@ -16,18 +16,31 @@ echo "Kolicnik: " . ($f / $s) . "<br>";
 
 // zadatak 2
 
-$d = array("ponedeljak", "utorak", "sreda", "cetvrtak", "petak", "subota", "nedelja");
-echo "Danas je "; print_r ($d[rand(0, 6)]); echo "! <br>";
+$d = 3;
+if ($d == 0) {
+    echo "Danas je ponedeljak!";
+} else if ($d == 1) {
+    echo "Danas je utorak!";
+}else if ($d == 2) {
+    echo "Danas je sreda!";
+}else if ($d == 3) {
+    echo "Danas je cetvrtak!";
+}else if ($d == 4) {
+    echo "Danas je petak!";
+}else if ($d == 5) {
+    echo "Danas je subota!";
+}else if ($d == 6) {
+    echo "Danas je nedelja!";
+}
 
 // zadatak 3
-$t = 2;
-$y = 6;
-$u = 9;
-$z = $t + $y + $u;
-echo "Zbir brojeva: " . $t .", " . $y . " i " . $u . " je " . $z;
+$t= rand(0, 10);
+$y= rand(0, 10);
+$u= rand(0, 10);
+$z= $t + $y + $u;
+echo "<br> prvi br: $t <br> drugi br: $y <br> treci br: $u <br> zbir: $z" ;
 
 ?>
 
 </body>
-</html>
 </html>
