@@ -1,0 +1,467 @@
+body {
+    background-color: rgb(255, 251, 246);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    text-align: center;
+    position: sticky;
+    top: 0%;
+    background-color: rgb(169, 138, 103);
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(38, 30, 24);
+    padding: 1%;
+}
+
+header ul li a:hover {
+    color: rgb(197, 217, 180);
+}
+
+header ul li {
+    display: inline-block;
+    background-color: rgb(130, 106, 77);
+    margin: 0.5%;
+    padding: 1%;
+    width: 12%;
+    font-size: 130%;
+    font-weight: 600;
+}
+
+header ul li:hover {
+    background-color: rgb(169, 138, 103);
+}
+
+div.container {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    text-align: center;
+    background-color: rgb(248, 236, 222);
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: large;
+    background-color: rgb(196, 219, 202);
+    margin-right: 12%;
+}
+
+.filter_box {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(155, 201, 169);
+    padding-bottom: 10%;
+}
+
+.checkbox {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    margin: auto;
+}
+
+div.checkbox:nth-child(even) {
+    color: rgb(62, 90, 39);
+}
+
+h5 {
+    font-size: large;
+    color: rgb(20, 34, 24);
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2%;
+}
+
+div.product {
+    border: 1px solid rgb(144, 112, 89);
+    display: grid;
+    padding: 10px;
+    grid-auto-flow: row;
+}
+
+div.product a {
+    text-decoration: none;
+    color: black;
+}
+
+.img_price_buy {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+img {
+    width: 60%;
+    padding: 10%;
+    background-color: rgb(205, 180, 141);
+}
+
+.filter_box label:first-of-type {
+    color: rgb(20, 58, 58);
+}
+
+.price_buy {
+    margin-right: 10%;
+}
+
+p {
+    border: 1px solid rgb(174, 130, 65);
+    background-color: rgb(226, 192, 136);
+}
+
+button {
+    border: none;
+    background-color: rgb(186, 138, 113);
+    color: beige;
+}
+
+button:active {
+    color: rgb(219, 245, 238);
+    background-color: rgb(74, 88, 67);
+}
+
+.h4 {
+    font-size: larger;
+    margin-top: 3px;
+    background-color: rgb(216, 180, 135);
+}
+
+footer {
+    background-color: rgb(211, 202, 191);
+    text-align: center;
+    padding: 2%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#sites {
+    background-color: rgb(240, 230, 217);
+}
+
+#register-footer {
+    text-align: right;
+    display: flex;
+}
+
+#register-footer ul {
+    margin: auto;
+}
+
+#register-footer li a {
+    background-color: rgb(88, 108, 84);
+    color: rgb(243, 251, 237);
+    font-weight: 600;
+    font-size: large;
+}
+
+#register-footer ul li {
+    display: inline-block;
+}
+
+#top {
+    position: fixed;
+    bottom: 5%;
+    right: 1%;
+    background-color: rgb(87, 111, 76);
+    font-weight: 400;
+    width: 5%;
+    height: 7%;
+}
+
+#top a {
+    text-decoration: none;
+    color: rgb(210, 250, 208);
+}
+
+#top a:hover {
+    background-color: rgb(152, 208, 155);
+}
+
+@media screen and (max-width:1200px) {
+    ul {
+        padding: 0%;
+        margin-bottom: 2%;
+    }
+    li {
+        margin: 1%;
+    }
+    header li a {
+        font-size: 100%;
+    }
+    aside {
+        display: none;
+    }
+    div.container {
+        display: block;
+    }
+    main {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .img_price_buy {
+        display: flex;
+        padding: 3%;
+    }
+    .price_buy {
+        margin: 0%;
+        margin-left: 6%;
+        display: grid;
+        grid-template-rows: auto auto;
+        padding: 2%;
+    }
+    img {
+        width: 45%;
+    }
+    .price {
+        margin-top: 50%;
+        margin-bottom: 50%;
+    }
+    .button {
+        height: max-content;
+        padding: 10%;
+        font-size: x-large;
+    }
+    p {
+        font-size: xx-large;
+    }
+    #top {
+        width: fit-content;
+    }
+    #register-footer {
+        display: inline-block;
+        text-align: center;
+    }
+    #register-footer ul li {
+        display: inline-block;
+    }
+    #register-footer li a {
+        background-color: rgb(88, 108, 84);
+        color: rgb(243, 251, 237);
+        font-weight: 600;
+        font-size: 220%;
+    }
+}
+
+@media screen and (max-width:922px) {
+    ul {
+        padding: 0%;
+    }
+    li {
+        padding: 4%;
+        margin: 1%;
+    }
+    li a {
+        font-size: larger;
+    }
+    aside {
+        display: none;
+    }
+    div.container {
+        display: block;
+    }
+    main {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .img_price_buy {
+        display: flex;
+        padding: 3%;
+    }
+    .price_buy {
+        margin: 0%;
+        margin-left: 4%;
+        display: grid;
+        grid-template-rows: auto auto;
+        padding: 2%;
+    }
+    img {
+        width: 50%;
+    }
+    .price {
+        margin-top: 50%;
+        margin-bottom: 50%;
+    }
+    .button {
+        height: max-content;
+        padding: 10%;
+        font-size: larger;
+    }
+    p {
+        font-size: larger;
+    }
+    #top {
+        width: fit-content;
+    }
+    #register-footer {
+        display: inline-block;
+        text-align: center;
+    }
+    #register-footer ul li {
+        display: inline-block;
+    }
+    #register-footer li a {
+        background-color: rgb(88, 108, 84);
+        color: rgb(243, 251, 237);
+        font-weight: 600;
+        font-size: 220%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    ul {
+        padding: 0%;
+    }
+    li {
+        padding: 4%;
+        margin: 1%;
+    }
+    li a {
+        font-size: larger;
+    }
+    aside {
+        display: none;
+    }
+    div.container {
+        display: block;
+    }
+    main {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .img_price_buy {
+        display: flex;
+        padding: 3%;
+    }
+    .price_buy {
+        margin: 0%;
+        margin-left: 4%;
+        display: grid;
+        grid-template-rows: auto auto;
+        padding: 2%;
+    }
+    img {
+        width: 50%;
+    }
+    .price {
+        margin-top: 50%;
+        margin-bottom: 50%;
+    }
+    .button {
+        height: max-content;
+        padding: 10%;
+        font-size: larger;
+    }
+    p {
+        font-size: larger;
+    }
+    #top {
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width:576px) {
+    ul {
+        padding: 0%;
+    }
+    li {
+        padding: 3%;
+        margin: 1%;
+    }
+    li a {
+        font-size: large;
+    }
+    aside {
+        display: none;
+    }
+    div.container {
+        display: block;
+    }
+    main {
+        display: inline-block;
+    }
+    .img_price_buy {
+        display: flex;
+        padding: 3%;
+    }
+    .price_buy {
+        margin: 0%;
+        margin-left: auto;
+        display: grid;
+        grid-template-rows: auto auto;
+    }
+    img {
+        width: 40%;
+    }
+    .price {
+        margin-top: 50%;
+        margin-bottom: 50%;
+    }
+    .button {
+        height: max-content;
+        padding: 10%;
+        font-size: larger;
+    }
+    p {
+        font-size: larger;
+    }
+    #top {
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width:390px) {
+    ul {
+        display: none;
+    }
+    header {
+        height: 10vw;
+    }
+    aside {
+        display: none;
+    }
+    div.container {
+        display: block;
+    }
+    main {
+        display: inline-block;
+    }
+    .img_price_buy {
+        display: flex;
+        padding: 3%;
+    }
+    .price_buy {
+        margin: 0%;
+        margin-left: 5%;
+        display: grid;
+        grid-template-rows: auto auto;
+    }
+    img {
+        width: 40%;
+    }
+    .price {
+        height: fit-content;
+        margin-top: 20%;
+        margin-bottom: 5%;
+    }
+    .button {
+        font-size: small;
+    }
+    p {
+        font-size: larger;
+    }
+    #top {
+        width: fit-content;
+    }
+}

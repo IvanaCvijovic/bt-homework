@@ -1,0 +1,130 @@
+body {
+    background-image: url(../img/leaf.jpg);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    text-align: center;
+    position: sticky;
+    top: 0%;
+    background-color: rgb(169, 138, 103);
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(38, 30, 24);
+    padding: 1%;
+}
+
+header ul li a:hover {
+    color: rgb(197, 217, 180);
+}
+
+header ul li {
+    display: inline-block;
+    background-color: rgb(130, 106, 77);
+    margin: 0.5%;
+    padding: 1%;
+    width: 12%;
+    font-size: 130%;
+    font-weight: 600;
+}
+
+header ul li:hover {
+    background-color: rgb(169, 138, 103);
+}
+
+h1 {
+    text-align: center;
+    color: rgb(95, 111, 80);
+}
+
+#form1 {
+    background-color: rgb(197, 217, 180);
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 30px;
+    border-radius: 2%;
+    width: 40%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+label {
+    text-align: right;
+}
+
+input {
+    margin-bottom: 3%;
+}
+
+::placeholder {
+    font-weight: 100;
+}
+
+input {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: medium;
+}
+
+#buttons-div {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 15%;
+    padding-top: 7%;
+}
+
+button {
+    background-color: rgb(222, 227, 222);
+    border: 0px;
+    padding: 13%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+
+button:hover {
+    background-color: azure;
+}
+
+::marker {
+    color: rgb(130, 169, 130);
+}
+
+footer {
+    background-color: rgb(211, 202, 191);
+    text-align: center;
+    padding: 2%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#sites {
+    background-color: rgb(240, 230, 217);
+}
+
+#register-footer {
+    text-align: right;
+    display: flex;
+}
+
+#register-footer ul {
+    margin: auto;
+}
+
+#register-footer li a {
+    background-color: rgb(88, 108, 84);
+    color: rgb(243, 251, 237);
+    font-weight: 600;
+    font-size: large;
+}
+
+#register-footer ul li {
+    display: inline-block;
+}

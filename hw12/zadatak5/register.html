@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="theme/css/register.css">
+    <script>
+        type
+    </script>
+    <title>Register</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Register</h1>
+            <form id="form1">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname" placeholder="Your surname" required>
+                <label>Gender:</label>
+                <div id="gender-div">
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                </div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Your password" required>
+                <label for="repass">Re-type password:</label>
+                <input type="password" id="repass" name="repass" placeholder="Re-type password" required>
+                <label for="course">Course:</label>
+                <div id="course-div">
+                    <input type="checkbox" id="java" name="course[]">
+                    <label for="java">Java</label>
+                    <input type="checkbox" id="php" name="course[]">
+                    <label for="php">php</label>
+                    <input type="checkbox" id="css" name="course[]">
+                    <label for="css">CSS</label>
+                </div>
+                <label for="file">Profile picture:</label>
+                <input type="file" id="file" name="file">
+                <div>
+                    <!--prazan div zbog grida-->
+                </div>
+                <div id="buttons-div">
+                    <button type="submit" id="submit">Save</button>
+                    <button type="reset" id="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div id="sites">
+            <ul>
+                <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+                <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+                <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+            </ul>
+        </div>
+        <div id="register-footer">
+            <ul>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

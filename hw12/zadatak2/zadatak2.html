@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak 2</title>
+    <style>
+        form {
+            display: grid;
+            grid-template-columns: 30% 30%;
+            padding: 3vw;
+            margin-left: 25%;
+        }
+        
+        input {
+            margin: 0.5vw;
+            padding: 0.5vw;
+        }
+        
+        label {
+            text-align: center;
+            padding-top: 1vw;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="zadatak2.php" method="POST">
+        <label for="a1">Sirina zida</label>
+        <input name="a1" type="number" id="a1">
+        <label for="a2">Visina zida</label>
+        <input name="a2" type="number" id="a2">
+        <label for="b1">Sirina plocice</label>
+        <input name="b1" type="number" id="b1">
+        <label for="b2">Visina plocice</label>
+        <input name="b2" type="number" id="b2">
+        <input type="submit">
+    </form>
+</body>
+
+</html>
