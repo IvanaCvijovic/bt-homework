@@ -16,7 +16,7 @@ function brojKamiona($brasno, $krofna,$flag = null){
         }
     }
 }
-echo brojKamiona(15,4);
+echo brojKamiona(17,4);
 ?>
 
 </body>
